@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/MatUrbanski/alpr_ruby.svg?branch=master)](https://travis-ci.org/MatUrbanski/alpr_ruby)
+[![Gem Version](https://badge.fury.io/rb/alpr_ruby.svg)](https://badge.fury.io/rb/alpr_ruby)
 
 # AlprRuby
 
