@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MatUrbanski/alpr_ruby.svg?branch=master)](https://travis-ci.org/MatUrbanski/alpr_ruby)
+
 # AlprRuby
 
 Ruby wrapper for OpenALPR REST API
