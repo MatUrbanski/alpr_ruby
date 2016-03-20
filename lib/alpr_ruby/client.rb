@@ -5,11 +5,13 @@ module AlprRuby
     end
 
     def recognize(params: {})
-      @api.call(
+      response = @api.call(
         endpoint: 'recognize',
         method: :post,
         params: params
       )
+
+      AlprRuby::Recognition.new(response)
     end
   end
 end

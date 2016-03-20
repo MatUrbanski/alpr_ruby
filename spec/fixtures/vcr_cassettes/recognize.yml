@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.openalpr.com/v1/recognize?secret_key=test_secret&image_url=http%3A%2F%2Fwww.motofilm.pl%2Fwp-content%2Fuploads%2F2010%2F04%2Faudi_a8_prezentacja_270410_03_glo.jpg&tasks=plate%2C%20color%2C%20make%2C%20makemodel&topn=1&country=eu
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset="utf-8"
+      Date:
+      - Sun, 20 Mar 2016 12:15:07 GMT
+      Server:
+      - nginx/1.8.0
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '49'
+      X-Ratelimit-Reset:
+      - '1458476110'
+      Content-Length:
+      - '888'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"plate": {"data_type": "alpr_results", "epoch_time": 1458476107702,
+        "img_height": 357, "img_width": 580, "results": [{"plate": "P0278ZH", "confidence":
+        90.740128, "region_confidence": 0, "region": "PL", "plate_index": 0, "processing_time_ms":
+        16.469744, "candidates": [{"matches_template": 0, "plate": "P0278ZH", "confidence":
+        90.740128}], "coordinates": [{"y": 215, "x": 240}, {"y": 215, "x": 354}, {"y":
+        244, "x": 354}, {"y": 244, "x": 240}], "matches_template": 0, "requested_topn":
+        1}], "version": 2, "processing_time_ms": 67.524963, "regions_of_interest":
+        []}, "color": [{"confidence": 96.7751, "value": "black"}], "make": [{"confidence":
+        100, "value": "audi"}], "img_width": 580, "credits_monthly_used": 100, "img_height":
+        357, "makemodel": [{"confidence": 94.3202, "value": "audi a8"}], "total_processing_time":
+        1420.2589999999873, "credits_monthly_total": 1500, "credit_cost": 4}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://api.openalpr.com/v1/recognize?secret_key=test_secret&image_url=http%3A%2F%2Fwww.motofilm.pl%2Fwp-content%2Fuploads%2F2010%2F04%2Faudi_a8_prezentacja_270410_03_glo.jpg&tasks=plate%2C%20color%2C%20make%2C%20makemodel&topn=1&country=eu
+  recorded_at: Sun, 20 Mar 2016 12:15:07 GMT
+recorded_with: VCR 3.0.1
