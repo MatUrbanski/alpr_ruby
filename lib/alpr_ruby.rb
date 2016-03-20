@@ -1,5 +1,7 @@
+require 'typhoeus'
+
 require 'alpr_ruby/version'
+require 'alpr_ruby/error'
 
 module AlprRuby
-  # Your code goes here...
 end
