@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Mateusz Urbański"]
   spec.email         = ['mateuszurbanski@yahoo.pl']
 
-  spec.summary       = 'Ruby wrapper for OpenALPR Cloud API '
+  spec.summary       = 'Ruby wrapper for OpenALPR Cloud API.'
   spec.description   = 'Ruby wrapper for OpenALPR Cloud API. See
                         https://http://doc.openalpr.com/bindings.html#cloud-api-commercial
                         for more details'
