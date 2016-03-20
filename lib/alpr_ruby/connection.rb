@@ -2,7 +2,7 @@ require 'json'
 
 module AlprRuby
   class Connection
-    BASE_URL    = 'https://openalpr.com/v1'.freeze
+    BASE_URL = 'https://api.openalpr.com/v1'.freeze
 
     def initialize(secret:)
       @secret = secret
@@ -14,6 +14,10 @@ module AlprRuby
         method: method,
         params: { secret_key: @secret }.merge!(params),
       ).run
+
+      if response.response_code != 200
+        AlprRuby::Error.new(code: response.response_code).render
+      end
 
       JSON.parse(response.response_body)
     end
