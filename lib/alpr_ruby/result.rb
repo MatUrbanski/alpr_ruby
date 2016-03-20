@@ -4,6 +4,7 @@ module AlprRuby
 
     attribute :plate, String
     attribute :confidence, Float
+    attribute :region, String
     attribute :region_confidence, Integer
     attribute :plate_index, Integer
     attribute :processing_time_ms, Float

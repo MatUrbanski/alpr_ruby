@@ -14,5 +14,7 @@ module AlprRuby
     attribute :credits_monthly_total, Integer
     attribute :image_bytes_prefix, String
     attribute :credit_cost, Integer
+
+    alias_method :model, :makemodel
   end
 end
